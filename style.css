@@ -25,7 +25,7 @@ background: linear-gradient(141deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 23
 }
 
 .to-do h2 {
-    font-size: 24px;
+    font-size: 32px;
     color: #212121;
     display: flex;
     align-items: center;
@@ -40,28 +40,29 @@ background: linear-gradient(141deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 23
 .row {
     display: flex;
     align-items: center;
-    background: #e5e4e4;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    padding-left : 20px;
-    margin-bottom: 20px;
+    background: none;
+    gap: 12px;
+    padding-left : 0px;
+  
 }
 
 input{
     flex : 1;
-    height: 40px;
+    height: 60px;
     border: none;
     outline: none;
-    background: transparent;
+    background: #e5e4e4;
     font-size: 16px;
     padding: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    
 }
 
 button {
     border: none;
     outline: none;
-    padding : 16px 50px;
+    padding : 16px 20px;
     background: #d34ff0;
     color: #fff;
     font-size: 18px;
@@ -72,7 +73,7 @@ button {
 ul li {
     list-style: none;
     font-size: 18px;
-    padding: 12px 8px 12px 50px;
+    padding: 24px 8px 12px 50px;
     border-bottom: 1px solid #ccc;
     position: relative;
     cursor: pointer;
@@ -87,7 +88,7 @@ ul li::before{
     background-image: url(images/icons8-circle-50.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 24px;
     left: 8px;
 }
 
