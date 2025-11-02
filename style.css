@@ -1,15 +1,14 @@
 *{ 
     margin: 0; 
     padding: 0; 
-    font-family: poppins, sans-serif;
+    font-family: 'Outfit', sans-serif;
     box-sizing: border-box;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background: #EEAECA;
-background: linear-gradient(141deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: #aacd97;
     padding: 10px;
 
 }
@@ -17,24 +16,25 @@ background: linear-gradient(141deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 23
 .to-do {
     width: 100%;
     max-width: 1000px;
-    background: #fff;
+    background: #27533f;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 13px;
-    border: #ec98ff 3px solid;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
 .to-do h2 {
-    font-size: 32px;
-    color: #212121;
+    font-size: 40px;
+    color: #aacd97;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .to-do h2 img {
+    position: relative;
     width: 80px;
-    margin-left: 10px;
+    margin-left: 4px;
 }
 
 .row {
@@ -52,31 +52,43 @@ input{
     border: none;
     outline: none;
     background: #e5e4e4;
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 7px;
     padding-left: 20px;
     
+}
+
+input:focus::placeholder{
+    color: transparent;
+    transition: all 0.1s ease;
 }
 
 button {
     border: none;
     outline: none;
-    padding : 16px 20px;
-    background: #d34ff0;
-    color: #fff;
-    font-size: 18px;
+    padding : 18px 24px;
+    background: #aacd97;
+    color: #27533f;
+    font-size: 20px;
+    font-weight: 550;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 7px;
+    transition:all 0.3s ease
 }
 
+.row button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2)
+}
 ul li {
     list-style: none;
     font-size: 18px;
     padding: 24px 8px 12px 50px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #aacd97;
     position: relative;
     cursor: pointer;
+    color: #fcf7f7;
 }
 
 ul li::before{
@@ -85,7 +97,7 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(images/icons8-circle-50.png);
+    background-image: url(images/unchecked.png);
     background-size: cover;
     background-position: center;
     top: 24px;
@@ -94,9 +106,9 @@ ul li::before{
 
 ul li.checked{
     text-decoration: line-through;
-    color: #555;
+    color: #aacd97;
 }
 ul li.checked::before{
-    background-image: url(images/Frame\ 3.png);
+    background-image: url(images/checked.png);
 }
 
